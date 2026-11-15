@@ -1,0 +1,2330 @@
+{
+ "_doc": "Seat unit (seat_unit_opus/seat.glb) anchors for the tidied karts (carved_seat_opus/v4_kartm_<species>.glb). glTF axes, metres, kart frame as loaded (x right, y up, z back; the kart faces -Z). The unit and the rider share ONE frame: the hip point. Put seat.glb at species[s].anchor (yaw, scale as given); place the rider (scaled to 1.34 m, turned half a turn) so that its hip point = (bbox centre x, bbox min y + riders[r].butt_up, bbox centre z + riders[r].hip_back) lands on the same anchor. Tint the unit materials with colors_linear. grip_L / grip_R = the two hand-hold points on the kart's own wheel; arm_reach_ratio = shoulder->grip / arm length (<= 0.98 reachable). See README.md.",
+ "unit": {
+  "pan_half_width": 0.235,
+  "pan_front": 0.3,
+  "rear": 0.22,
+  "back_height": 0.34,
+  "back_tilt_deg": 8,
+  "rim_height": 0.1,
+  "skirt_width": 0.2,
+  "skirt_drop": 0.3,
+  "floor": -0.1782,
+  "footprint_x": [
+   -0.314,
+   0.314
+  ],
+  "footprint_z": [
+   -0.779,
+   0.26
+  ]
+ },
+ "riders": {
+  "bakuou": {
+   "butt_up": 0.0961,
+   "hip_back": 0.2788
+  },
+  "fubuki": {
+   "butt_up": 0.121,
+   "hip_back": 0.1781
+  },
+  "hayate": {
+   "butt_up": 0.152,
+   "hip_back": 0.2184
+  },
+  "kai": {
+   "butt_up": 0.1085,
+   "hip_back": 0.1744
+  },
+  "kou": {
+   "butt_up": 0.1045,
+   "hip_back": 0.1715
+  },
+  "mino": {
+   "butt_up": 0.091,
+   "hip_back": 0.2091
+  },
+  "rei": {
+   "butt_up": 0.1173,
+   "hip_back": 0.182
+  },
+  "roku": {
+   "butt_up": 0.0961,
+   "hip_back": 0.179
+  },
+  "saji": {
+   "butt_up": 0.1193,
+   "hip_back": 0.1298
+  },
+  "shigure": {
+   "butt_up": 0.1456,
+   "hip_back": 0.1183
+  },
+  "tadakuni": {
+   "butt_up": 0.1582,
+   "hip_back": 0.1806
+  },
+  "toto": {
+   "butt_up": 0.0895,
+   "hip_back": 0.1466
+  }
+ },
+ "species": {
+  "spinosaurus": {
+   "anchor": [
+    0.0015,
+    0.8756,
+    0.2214
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.0015,
+    0.8756,
+    0.2214
+   ],
+   "wheel_shift": [
+    0.0,
+    0.08,
+    0.25
+   ],
+   "unit_file": "seat_unit_opus/seat_spinosaurus.glb",
+   "unit_faces_clipped": 118,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.931,
+     "R": 0.939
+    },
+    "fubuki": {
+     "L": 1.253,
+     "R": 1.262
+    },
+    "hayate": {
+     "L": 1.281,
+     "R": 1.292
+    },
+    "kai": {
+     "L": 1.385,
+     "R": 1.394
+    },
+    "kou": {
+     "L": 1.304,
+     "R": 1.31
+    },
+    "mino": {
+     "L": 1.258,
+     "R": 1.268
+    },
+    "rei": {
+     "L": 1.409,
+     "R": 1.419
+    },
+    "roku": {
+     "L": 1.255,
+     "R": 1.263
+    },
+    "saji": {
+     "L": 1.733,
+     "R": 1.744
+    },
+    "shigure": {
+     "L": 1.498,
+     "R": 1.505
+    },
+    "tadakuni": {
+     "L": 1.486,
+     "R": 1.495
+    },
+    "toto": {
+     "L": 1.411,
+     "R": 1.42
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 6.05,
+    "fubuki": 4.7,
+    "hayate": 6.08,
+    "kai": 5.56,
+    "kou": 2.97,
+    "mino": 6.53,
+    "rei": 2.52,
+    "roku": 7.3,
+    "saji": 3.49,
+    "shigure": 6.71,
+    "tadakuni": 6.13,
+    "toto": 5.61
+   },
+   "grip_L": [
+    -0.137,
+    1.2705,
+    -0.1415
+   ],
+   "grip_R": [
+    0.1452,
+    1.2583,
+    -0.1425
+   ],
+   "fists_mean": [
+    -0.0096,
+    1.2415,
+    -0.2872
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.409,
+     "R": 0.411
+    },
+    "fubuki": {
+     "L": 0.631,
+     "R": 0.637
+    },
+    "hayate": {
+     "L": 0.586,
+     "R": 0.593
+    },
+    "kai": {
+     "L": 0.688,
+     "R": 0.693
+    },
+    "kou": {
+     "L": 0.687,
+     "R": 0.686
+    },
+    "mino": {
+     "L": 0.587,
+     "R": 0.594
+    },
+    "rei": {
+     "L": 0.7,
+     "R": 0.707
+    },
+    "roku": {
+     "L": 0.604,
+     "R": 0.607
+    },
+    "saji": {
+     "L": 0.937,
+     "R": 0.943
+    },
+    "shigure": {
+     "L": 0.809,
+     "R": 0.811
+    },
+    "tadakuni": {
+     "L": 0.727,
+     "R": 0.731
+    },
+    "toto": {
+     "L": 0.726,
+     "R": 0.734
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.0429,
+     0.1108,
+     0.1301
+    ],
+    "seat_tub": [
+     0.0176,
+     0.0355,
+     0.0403
+    ],
+    "seat_trim": [
+     0.029,
+     0.0666,
+     0.077
+    ]
+   },
+   "deck_height_above_seat": [
+    -0.04,
+    0.079,
+    0.254
+   ],
+   "head_top_y": 2.1,
+   "doll_min_y": 0.759,
+   "removed": {
+    "tub": 1298,
+    "skirt": 0,
+    "rider": 27,
+    "island": 151,
+    "needle": 7,
+    "interior": 659,
+    "holes_filled": 8
+   },
+   "deck_probe_above_seat": [
+    0.177,
+    0.261,
+    0.365
+   ]
+  },
+  "tyrannosaurus": {
+   "anchor": [
+    0.003,
+    0.7106,
+    0.2114
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.003,
+    0.7106,
+    0.2114
+   ],
+   "wheel_shift": [
+    0.0,
+    0.01,
+    0.24
+   ],
+   "unit_file": "seat_unit_opus/seat_tyrannosaurus.glb",
+   "unit_faces_clipped": 7,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.854,
+     "R": 0.877
+    },
+    "fubuki": {
+     "L": 1.174,
+     "R": 1.183
+    },
+    "hayate": {
+     "L": 1.195,
+     "R": 1.204
+    },
+    "kai": {
+     "L": 1.306,
+     "R": 1.31
+    },
+    "kou": {
+     "L": 1.232,
+     "R": 1.248
+    },
+    "mino": {
+     "L": 1.175,
+     "R": 1.183
+    },
+    "rei": {
+     "L": 1.33,
+     "R": 1.329
+    },
+    "roku": {
+     "L": 1.19,
+     "R": 1.187
+    },
+    "saji": {
+     "L": 1.642,
+     "R": 1.649
+    },
+    "shigure": {
+     "L": 1.432,
+     "R": 1.429
+    },
+    "tadakuni": {
+     "L": 1.404,
+     "R": 1.408
+    },
+    "toto": {
+     "L": 1.335,
+     "R": 1.333
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 2.8,
+    "fubuki": 4.1,
+    "hayate": 5.57,
+    "kai": 6.21,
+    "kou": 4.12,
+    "mino": 7.1,
+    "rei": 3.72,
+    "roku": 7.12,
+    "saji": 5.02,
+    "shigure": 6.57,
+    "tadakuni": 5.53,
+    "toto": 6.05
+   },
+   "grip_L": [
+    -0.1653,
+    1.0976,
+    -0.1492
+   ],
+   "grip_R": [
+    0.1145,
+    1.0819,
+    -0.1378
+   ],
+   "fists_mean": [
+    -0.0081,
+    1.0765,
+    -0.2972
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.369,
+     "R": 0.45
+    },
+    "fubuki": {
+     "L": 0.608,
+     "R": 0.649
+    },
+    "hayate": {
+     "L": 0.559,
+     "R": 0.611
+    },
+    "kai": {
+     "L": 0.663,
+     "R": 0.701
+    },
+    "kou": {
+     "L": 0.65,
+     "R": 0.704
+    },
+    "mino": {
+     "L": 0.562,
+     "R": 0.608
+    },
+    "rei": {
+     "L": 0.681,
+     "R": 0.708
+    },
+    "roku": {
+     "L": 0.584,
+     "R": 0.606
+    },
+    "saji": {
+     "L": 0.908,
+     "R": 0.948
+    },
+    "shigure": {
+     "L": 0.787,
+     "R": 0.805
+    },
+    "tadakuni": {
+     "L": 0.697,
+     "R": 0.738
+    },
+    "toto": {
+     "L": 0.71,
+     "R": 0.732
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.1562,
+     0.1483,
+     0.0611
+    ],
+    "seat_tub": [
+     0.0465,
+     0.0447,
+     0.0226
+    ],
+    "seat_trim": [
+     0.0908,
+     0.0867,
+     0.0393
+    ]
+   },
+   "deck_height_above_seat": [
+    0.067,
+    0.175,
+    0.349
+   ],
+   "head_top_y": 1.934,
+   "doll_min_y": 0.594,
+   "removed": {
+    "tub": 1292,
+    "skirt": 0,
+    "rider": 26,
+    "island": 279,
+    "needle": 3,
+    "interior": 34,
+    "holes_filled": 7
+   },
+   "deck_probe_above_seat": [
+    0.278,
+    0.34,
+    0.363
+   ]
+  },
+  "giganotosaurus": {
+   "anchor": [
+    -0.0005,
+    0.5986,
+    0.3064
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    -0.0005,
+    0.5986,
+    0.3064
+   ],
+   "wheel_shift": [
+    0.0,
+    0.08,
+    0.32
+   ],
+   "unit_file": "seat_unit_opus/seat_giganotosaurus.glb",
+   "unit_faces_clipped": 28,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 1.083,
+     "R": 1.06
+    },
+    "fubuki": {
+     "L": 1.426,
+     "R": 1.402
+    },
+    "hayate": {
+     "L": 1.476,
+     "R": 1.45
+    },
+    "kai": {
+     "L": 1.584,
+     "R": 1.557
+    },
+    "kou": {
+     "L": 1.487,
+     "R": 1.462
+    },
+    "mino": {
+     "L": 1.446,
+     "R": 1.42
+    },
+    "rei": {
+     "L": 1.609,
+     "R": 1.582
+    },
+    "roku": {
+     "L": 1.445,
+     "R": 1.421
+    },
+    "saji": {
+     "L": 1.96,
+     "R": 1.93
+    },
+    "shigure": {
+     "L": 1.702,
+     "R": 1.676
+    },
+    "tadakuni": {
+     "L": 1.705,
+     "R": 1.677
+    },
+    "toto": {
+     "L": 1.604,
+     "R": 1.578
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 4.29,
+    "fubuki": 4.45,
+    "hayate": 7.91,
+    "kai": 6.29,
+    "kou": 5.86,
+    "mino": 6.66,
+    "rei": 2.56,
+    "roku": 7.34,
+    "saji": 3.77,
+    "shigure": 6.71,
+    "tadakuni": 4.46,
+    "toto": 5.72
+   },
+   "grip_L": [
+    -0.1486,
+    1.0134,
+    -0.0678
+   ],
+   "grip_R": [
+    0.1529,
+    1.0174,
+    -0.0594
+   ],
+   "fists_mean": [
+    -0.0116,
+    0.9645,
+    -0.2022
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.404,
+     "R": 0.381
+    },
+    "fubuki": {
+     "L": 0.635,
+     "R": 0.61
+    },
+    "hayate": {
+     "L": 0.592,
+     "R": 0.564
+    },
+    "kai": {
+     "L": 0.7,
+     "R": 0.672
+    },
+    "kou": {
+     "L": 0.697,
+     "R": 0.672
+    },
+    "mino": {
+     "L": 0.592,
+     "R": 0.565
+    },
+    "rei": {
+     "L": 0.712,
+     "R": 0.685
+    },
+    "roku": {
+     "L": 0.621,
+     "R": 0.597
+    },
+    "saji": {
+     "L": 0.95,
+     "R": 0.918
+    },
+    "shigure": {
+     "L": 0.829,
+     "R": 0.803
+    },
+    "tadakuni": {
+     "L": 0.743,
+     "R": 0.714
+    },
+    "toto": {
+     "L": 0.739,
+     "R": 0.713
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.0824,
+     0.0722,
+     0.073
+    ],
+    "seat_tub": [
+     0.0283,
+     0.0256,
+     0.0258
+    ],
+    "seat_trim": [
+     0.0511,
+     0.0455,
+     0.046
+    ]
+   },
+   "deck_height_above_seat": [
+    0.039,
+    0.187,
+    0.31
+   ],
+   "head_top_y": 1.822,
+   "doll_min_y": 0.482,
+   "removed": {
+    "tub": 927,
+    "skirt": 0,
+    "rider": 41,
+    "island": 393,
+    "needle": 188,
+    "interior": 56,
+    "holes_filled": 11
+   },
+   "deck_probe_above_seat": [
+    0.228,
+    0.302,
+    0.365
+   ]
+  },
+  "ceratosaurus": {
+   "anchor": [
+    -0.0005,
+    0.6626,
+    0.2964
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    -0.0005,
+    0.6626,
+    0.2964
+   ],
+   "wheel_shift": [
+    0.0,
+    0.02,
+    0.21
+   ],
+   "unit_file": "seat_unit_opus/seat_ceratosaurus.glb",
+   "unit_faces_clipped": 48,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.804,
+     "R": 0.824
+    },
+    "fubuki": {
+     "L": 1.114,
+     "R": 1.134
+    },
+    "hayate": {
+     "L": 1.126,
+     "R": 1.149
+    },
+    "kai": {
+     "L": 1.234,
+     "R": 1.257
+    },
+    "kou": {
+     "L": 1.169,
+     "R": 1.19
+    },
+    "mino": {
+     "L": 1.109,
+     "R": 1.131
+    },
+    "rei": {
+     "L": 1.257,
+     "R": 1.279
+    },
+    "roku": {
+     "L": 1.12,
+     "R": 1.14
+    },
+    "saji": {
+     "L": 1.561,
+     "R": 1.587
+    },
+    "shigure": {
+     "L": 1.357,
+     "R": 1.378
+    },
+    "tadakuni": {
+     "L": 1.324,
+     "R": 1.348
+    },
+    "toto": {
+     "L": 1.265,
+     "R": 1.286
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 8.16,
+    "fubuki": 6.48,
+    "hayate": 10.46,
+    "kai": 7.27,
+    "kou": 4.56,
+    "mino": 9.42,
+    "rei": 2.82,
+    "roku": 7.04,
+    "saji": 4.95,
+    "shigure": 6.48,
+    "tadakuni": 5.87,
+    "toto": 9.03
+   },
+   "grip_L": [
+    -0.1532,
+    1.0442,
+    -0.0627
+   ],
+   "grip_R": [
+    0.1455,
+    1.0418,
+    -0.0695
+   ],
+   "fists_mean": [
+    -0.0116,
+    1.0285,
+    -0.2122
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.392,
+     "R": 0.414
+    },
+    "fubuki": {
+     "L": 0.62,
+     "R": 0.643
+    },
+    "hayate": {
+     "L": 0.574,
+     "R": 0.599
+    },
+    "kai": {
+     "L": 0.674,
+     "R": 0.699
+    },
+    "kou": {
+     "L": 0.665,
+     "R": 0.689
+    },
+    "mino": {
+     "L": 0.575,
+     "R": 0.599
+    },
+    "rei": {
+     "L": 0.69,
+     "R": 0.714
+    },
+    "roku": {
+     "L": 0.59,
+     "R": 0.612
+    },
+    "saji": {
+     "L": 0.921,
+     "R": 0.949
+    },
+    "shigure": {
+     "L": 0.793,
+     "R": 0.816
+    },
+    "tadakuni": {
+     "L": 0.709,
+     "R": 0.736
+    },
+    "toto": {
+     "L": 0.717,
+     "R": 0.74
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.1208,
+     0.0962,
+     0.0611
+    ],
+    "seat_tub": [
+     0.038,
+     0.0318,
+     0.0226
+    ],
+    "seat_trim": [
+     0.072,
+     0.0587,
+     0.0393
+    ]
+   },
+   "deck_height_above_seat": [
+    0.108,
+    0.237,
+    0.41
+   ],
+   "head_top_y": 1.886,
+   "doll_min_y": 0.546,
+   "removed": {
+    "tub": 656,
+    "skirt": 0,
+    "rider": 70,
+    "island": 429,
+    "needle": 5,
+    "interior": 215,
+    "holes_filled": 12
+   },
+   "deck_probe_above_seat": [
+    0.235,
+    0.286,
+    0.365
+   ]
+  },
+  "coelacanth": {
+   "anchor": [
+    -0.003,
+    0.7876,
+    0.4384
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    -0.003,
+    0.7876,
+    0.4384
+   ],
+   "wheel_shift": [
+    0.0,
+    0.1,
+    0.29
+   ],
+   "unit_file": "seat_unit_opus/seat_coelacanth.glb",
+   "unit_faces_clipped": 70,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 1.017,
+     "R": 1.035
+    },
+    "fubuki": {
+     "L": 1.351,
+     "R": 1.369
+    },
+    "hayate": {
+     "L": 1.392,
+     "R": 1.411
+    },
+    "kai": {
+     "L": 1.493,
+     "R": 1.513
+    },
+    "kou": {
+     "L": 1.398,
+     "R": 1.419
+    },
+    "mino": {
+     "L": 1.365,
+     "R": 1.383
+    },
+    "rei": {
+     "L": 1.52,
+     "R": 1.538
+    },
+    "roku": {
+     "L": 1.355,
+     "R": 1.372
+    },
+    "saji": {
+     "L": 1.856,
+     "R": 1.879
+    },
+    "shigure": {
+     "L": 1.602,
+     "R": 1.621
+    },
+    "tadakuni": {
+     "L": 1.602,
+     "R": 1.624
+    },
+    "toto": {
+     "L": 1.517,
+     "R": 1.535
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 5.36,
+    "fubuki": 4.17,
+    "hayate": 7.79,
+    "kai": 6.17,
+    "kou": 4.44,
+    "mino": 8.4,
+    "rei": 3.72,
+    "roku": 7.34,
+    "saji": 4.5,
+    "shigure": 8.56,
+    "tadakuni": 6.42,
+    "toto": 6.99
+   },
+   "grip_L": [
+    -0.1526,
+    1.1725,
+    0.0808
+   ],
+   "grip_R": [
+    0.133,
+    1.173,
+    0.0754
+   ],
+   "fists_mean": [
+    -0.0141,
+    1.1535,
+    -0.0702
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.391,
+     "R": 0.419
+    },
+    "fubuki": {
+     "L": 0.617,
+     "R": 0.64
+    },
+    "hayate": {
+     "L": 0.57,
+     "R": 0.597
+    },
+    "kai": {
+     "L": 0.671,
+     "R": 0.697
+    },
+    "kou": {
+     "L": 0.664,
+     "R": 0.693
+    },
+    "mino": {
+     "L": 0.572,
+     "R": 0.597
+    },
+    "rei": {
+     "L": 0.685,
+     "R": 0.709
+    },
+    "roku": {
+     "L": 0.587,
+     "R": 0.609
+    },
+    "saji": {
+     "L": 0.917,
+     "R": 0.946
+    },
+    "shigure": {
+     "L": 0.79,
+     "R": 0.813
+    },
+    "tadakuni": {
+     "L": 0.706,
+     "R": 0.735
+    },
+    "toto": {
+     "L": 0.713,
+     "R": 0.735
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.0562,
+     0.0781,
+     0.1084
+    ],
+    "seat_tub": [
+     0.0213,
+     0.0272,
+     0.0349
+    ],
+    "seat_trim": [
+     0.0366,
+     0.0488,
+     0.0653
+    ]
+   },
+   "deck_height_above_seat": [
+    -0.075,
+    0.101,
+    0.244
+   ],
+   "head_top_y": 2.011,
+   "doll_min_y": 0.671,
+   "removed": {
+    "tub": 1534,
+    "skirt": 0,
+    "rider": 46,
+    "island": 98,
+    "needle": 44,
+    "interior": 4,
+    "holes_filled": 8
+   },
+   "deck_probe_above_seat": [
+    0.138,
+    0.242,
+    0.265
+   ]
+  },
+  "allosaurus": {
+   "anchor": [
+    0.0005,
+    0.6976,
+    0.2994
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.0005,
+    0.6976,
+    0.2994
+   ],
+   "wheel_shift": [
+    0.0,
+    0.06,
+    0.26
+   ],
+   "unit_file": "seat_unit_opus/seat_allosaurus.glb",
+   "unit_faces_clipped": 837,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.895,
+     "R": 0.947
+    },
+    "fubuki": {
+     "L": 1.222,
+     "R": 1.28
+    },
+    "hayate": {
+     "L": 1.247,
+     "R": 1.312
+    },
+    "kai": {
+     "L": 1.356,
+     "R": 1.42
+    },
+    "kou": {
+     "L": 1.274,
+     "R": 1.332
+    },
+    "mino": {
+     "L": 1.226,
+     "R": 1.289
+    },
+    "rei": {
+     "L": 1.381,
+     "R": 1.446
+    },
+    "roku": {
+     "L": 1.234,
+     "R": 1.294
+    },
+    "saji": {
+     "L": 1.699,
+     "R": 1.772
+    },
+    "shigure": {
+     "L": 1.477,
+     "R": 1.54
+    },
+    "tadakuni": {
+     "L": 1.456,
+     "R": 1.526
+    },
+    "toto": {
+     "L": 1.385,
+     "R": 1.447
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 6.78,
+    "fubuki": 4.59,
+    "hayate": 5.29,
+    "kai": 5.84,
+    "kou": 3.41,
+    "mino": 5.84,
+    "rei": 2.43,
+    "roku": 6.82,
+    "saji": 2.79,
+    "shigure": 6.85,
+    "tadakuni": 4.01,
+    "toto": 3.85
+   },
+   "grip_L": [
+    -0.1696,
+    1.1079,
+    -0.0554
+   ],
+   "grip_R": [
+    0.1726,
+    1.0962,
+    -0.0773
+   ],
+   "fists_mean": [
+    -0.0106,
+    1.0635,
+    -0.2092
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.342,
+     "R": 0.385
+    },
+    "fubuki": {
+     "L": 0.577,
+     "R": 0.633
+    },
+    "hayate": {
+     "L": 0.525,
+     "R": 0.588
+    },
+    "kai": {
+     "L": 0.634,
+     "R": 0.696
+    },
+    "kou": {
+     "L": 0.629,
+     "R": 0.68
+    },
+    "mino": {
+     "L": 0.529,
+     "R": 0.59
+    },
+    "rei": {
+     "L": 0.65,
+     "R": 0.714
+    },
+    "roku": {
+     "L": 0.562,
+     "R": 0.618
+    },
+    "saji": {
+     "L": 0.875,
+     "R": 0.945
+    },
+    "shigure": {
+     "L": 0.765,
+     "R": 0.825
+    },
+    "tadakuni": {
+     "L": 0.67,
+     "R": 0.736
+    },
+    "toto": {
+     "L": 0.68,
+     "R": 0.742
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.0456,
+     0.0889,
+     0.0882
+    ],
+    "seat_tub": [
+     0.0184,
+     0.0299,
+     0.0298
+    ],
+    "seat_trim": [
+     0.0306,
+     0.0547,
+     0.0544
+    ]
+   },
+   "deck_height_above_seat": [
+    -0.08,
+    0.128,
+    0.355
+   ],
+   "head_top_y": 1.922,
+   "doll_min_y": 0.581,
+   "removed": {
+    "tub": 674,
+    "skirt": 0,
+    "rider": 18,
+    "island": 68,
+    "needle": 11,
+    "interior": 305,
+    "holes_filled": 12
+   },
+   "deck_probe_above_seat": [
+    0.167,
+    0.268,
+    0.345
+   ]
+  },
+  "therizinosaurus": {
+   "anchor": [
+    0.0005,
+    0.7336,
+    0.3444
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.0005,
+    0.7336,
+    0.3444
+   ],
+   "wheel_shift": [
+    0.0,
+    0.03,
+    0.19
+   ],
+   "unit_file": "seat_unit_opus/seat_therizinosaurus.glb",
+   "unit_faces_clipped": 647,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.76,
+     "R": 0.779
+    },
+    "fubuki": {
+     "L": 1.061,
+     "R": 1.085
+    },
+    "hayate": {
+     "L": 1.067,
+     "R": 1.095
+    },
+    "kai": {
+     "L": 1.175,
+     "R": 1.203
+    },
+    "kou": {
+     "L": 1.116,
+     "R": 1.14
+    },
+    "mino": {
+     "L": 1.052,
+     "R": 1.078
+    },
+    "rei": {
+     "L": 1.196,
+     "R": 1.225
+    },
+    "roku": {
+     "L": 1.062,
+     "R": 1.09
+    },
+    "saji": {
+     "L": 1.493,
+     "R": 1.525
+    },
+    "shigure": {
+     "L": 1.296,
+     "R": 1.325
+    },
+    "tadakuni": {
+     "L": 1.258,
+     "R": 1.289
+    },
+    "toto": {
+     "L": 1.206,
+     "R": 1.234
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 6.67,
+    "fubuki": 4.59,
+    "hayate": 4.93,
+    "kai": 5.6,
+    "kou": 3.45,
+    "mino": 6.86,
+    "rei": 2.96,
+    "roku": 5.81,
+    "saji": 2.62,
+    "shigure": 5.6,
+    "tadakuni": 4.83,
+    "toto": 6.6
+   },
+   "grip_L": [
+    -0.1459,
+    1.1254,
+    -0.011
+   ],
+   "grip_R": [
+    0.1525,
+    1.1286,
+    -0.0233
+   ],
+   "fists_mean": [
+    -0.0106,
+    1.0995,
+    -0.1642
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.388,
+     "R": 0.397
+    },
+    "fubuki": {
+     "L": 0.61,
+     "R": 0.629
+    },
+    "hayate": {
+     "L": 0.562,
+     "R": 0.584
+    },
+    "kai": {
+     "L": 0.664,
+     "R": 0.688
+    },
+    "kou": {
+     "L": 0.661,
+     "R": 0.681
+    },
+    "mino": {
+     "L": 0.564,
+     "R": 0.585
+    },
+    "rei": {
+     "L": 0.677,
+     "R": 0.703
+    },
+    "roku": {
+     "L": 0.581,
+     "R": 0.607
+    },
+    "saji": {
+     "L": 0.909,
+     "R": 0.937
+    },
+    "shigure": {
+     "L": 0.784,
+     "R": 0.812
+    },
+    "tadakuni": {
+     "L": 0.7,
+     "R": 0.727
+    },
+    "toto": {
+     "L": 0.705,
+     "R": 0.73
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.0588,
+     0.1177,
+     0.1084
+    ],
+    "seat_tub": [
+     0.022,
+     0.0372,
+     0.0349
+    ],
+    "seat_trim": [
+     0.0381,
+     0.0703,
+     0.0653
+    ]
+   },
+   "deck_height_above_seat": [
+    0.008,
+    0.19,
+    0.438
+   ],
+   "head_top_y": 1.958,
+   "doll_min_y": 0.617,
+   "removed": {
+    "tub": 479,
+    "skirt": 0,
+    "rider": 14,
+    "island": 213,
+    "needle": 8,
+    "interior": 301,
+    "holes_filled": 15
+   },
+   "deck_probe_above_seat": [
+    0.248,
+    0.351,
+    0.365
+   ]
+  },
+  "archaeornithomimus": {
+   "anchor": [
+    0.0,
+    0.7336,
+    0.4744
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.0,
+    0.7336,
+    0.4744
+   ],
+   "wheel_shift": [
+    0.0,
+    0.07,
+    0.13
+   ],
+   "unit_file": "seat_unit_opus/seat_archaeornithomimus.glb",
+   "unit_faces_clipped": 984,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.671,
+     "R": 0.686
+    },
+    "fubuki": {
+     "L": 0.965,
+     "R": 0.98
+    },
+    "hayate": {
+     "L": 0.959,
+     "R": 0.976
+    },
+    "kai": {
+     "L": 1.062,
+     "R": 1.079
+    },
+    "kou": {
+     "L": 1.002,
+     "R": 1.021
+    },
+    "mino": {
+     "L": 0.948,
+     "R": 0.964
+    },
+    "rei": {
+     "L": 1.086,
+     "R": 1.102
+    },
+    "roku": {
+     "L": 0.954,
+     "R": 0.97
+    },
+    "saji": {
+     "L": 1.363,
+     "R": 1.384
+    },
+    "shigure": {
+     "L": 1.177,
+     "R": 1.195
+    },
+    "tadakuni": {
+     "L": 1.131,
+     "R": 1.151
+    },
+    "toto": {
+     "L": 1.1,
+     "R": 1.115
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 7.82,
+    "fubuki": 8.27,
+    "hayate": 9.18,
+    "kai": 6.62,
+    "kou": 4.64,
+    "mino": 8.81,
+    "rei": 2.29,
+    "roku": 8.44,
+    "saji": 2.72,
+    "shigure": 4.53,
+    "tadakuni": 5.87,
+    "toto": 6.71
+   },
+   "grip_L": [
+    -0.1663,
+    1.1367,
+    0.1057
+   ],
+   "grip_R": [
+    0.1575,
+    1.141,
+    0.0992
+   ],
+   "fists_mean": [
+    -0.0111,
+    1.0995,
+    -0.0342
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.375,
+     "R": 0.396
+    },
+    "fubuki": {
+     "L": 0.616,
+     "R": 0.634
+    },
+    "hayate": {
+     "L": 0.569,
+     "R": 0.59
+    },
+    "kai": {
+     "L": 0.676,
+     "R": 0.698
+    },
+    "kou": {
+     "L": 0.666,
+     "R": 0.69
+    },
+    "mino": {
+     "L": 0.571,
+     "R": 0.591
+    },
+    "rei": {
+     "L": 0.693,
+     "R": 0.713
+    },
+    "roku": {
+     "L": 0.6,
+     "R": 0.619
+    },
+    "saji": {
+     "L": 0.923,
+     "R": 0.948
+    },
+    "shigure": {
+     "L": 0.806,
+     "R": 0.827
+    },
+    "tadakuni": {
+     "L": 0.715,
+     "R": 0.739
+    },
+    "toto": {
+     "L": 0.722,
+     "R": 0.74
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.3032,
+     0.2423,
+     0.1284
+    ],
+    "seat_tub": [
+     0.0803,
+     0.0666,
+     0.0398
+    ],
+    "seat_trim": [
+     0.1672,
+     0.1359,
+     0.0761
+    ]
+   },
+   "deck_height_above_seat": [
+    -0.005,
+    0.073,
+    0.246
+   ],
+   "head_top_y": 1.958,
+   "doll_min_y": 0.617,
+   "removed": {
+    "tub": 1363,
+    "skirt": 0,
+    "rider": 71,
+    "island": 332,
+    "needle": 4,
+    "interior": 247,
+    "holes_filled": 10
+   },
+   "deck_probe_above_seat": [
+    0.14,
+    0.169,
+    0.194
+   ]
+  },
+  "velociraptor": {
+   "anchor": [
+    0.0015,
+    0.8586,
+    0.1374
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.0015,
+    0.8586,
+    0.1374
+   ],
+   "wheel_shift": [
+    0.0,
+    0.18,
+    0.22
+   ],
+   "unit_file": "seat_unit_opus/seat_velociraptor.glb",
+   "unit_faces_clipped": 213,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.943,
+     "R": 0.96
+    },
+    "fubuki": {
+     "L": 1.251,
+     "R": 1.271
+    },
+    "hayate": {
+     "L": 1.28,
+     "R": 1.302
+    },
+    "kai": {
+     "L": 1.371,
+     "R": 1.394
+    },
+    "kou": {
+     "L": 1.285,
+     "R": 1.307
+    },
+    "mino": {
+     "L": 1.256,
+     "R": 1.278
+    },
+    "rei": {
+     "L": 1.395,
+     "R": 1.419
+    },
+    "roku": {
+     "L": 1.231,
+     "R": 1.253
+    },
+    "saji": {
+     "L": 1.714,
+     "R": 1.741
+    },
+    "shigure": {
+     "L": 1.462,
+     "R": 1.487
+    },
+    "tadakuni": {
+     "L": 1.463,
+     "R": 1.489
+    },
+    "toto": {
+     "L": 1.395,
+     "R": 1.418
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 3.45,
+    "fubuki": 2.98,
+    "hayate": 4.29,
+    "kai": 4.5,
+    "kou": 0.44,
+    "mino": 4.3,
+    "rei": 1.53,
+    "roku": 4.81,
+    "saji": 2.79,
+    "shigure": 2.68,
+    "tadakuni": 3.45,
+    "toto": 3.25
+   },
+   "grip_L": [
+    -0.1174,
+    1.271,
+    -0.2147
+   ],
+   "grip_R": [
+    0.12,
+    1.2726,
+    -0.2252
+   ],
+   "fists_mean": [
+    -0.0096,
+    1.2245,
+    -0.3712
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.417,
+     "R": 0.432
+    },
+    "fubuki": {
+     "L": 0.617,
+     "R": 0.639
+    },
+    "hayate": {
+     "L": 0.575,
+     "R": 0.599
+    },
+    "kai": {
+     "L": 0.674,
+     "R": 0.7
+    },
+    "kou": {
+     "L": 0.688,
+     "R": 0.71
+    },
+    "mino": {
+     "L": 0.573,
+     "R": 0.596
+    },
+    "rei": {
+     "L": 0.68,
+     "R": 0.706
+    },
+    "roku": {
+     "L": 0.591,
+     "R": 0.616
+    },
+    "saji": {
+     "L": 0.919,
+     "R": 0.949
+    },
+    "shigure": {
+     "L": 0.794,
+     "R": 0.821
+    },
+    "tadakuni": {
+     "L": 0.716,
+     "R": 0.744
+    },
+    "toto": {
+     "L": 0.706,
+     "R": 0.731
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.2114,
+     0.1272,
+     0.0831
+    ],
+    "seat_tub": [
+     0.0595,
+     0.0395,
+     0.0285
+    ],
+    "seat_trim": [
+     0.1198,
+     0.0754,
+     0.0516
+    ]
+   },
+   "deck_height_above_seat": [
+    -0.043,
+    0.069,
+    0.286
+   ],
+   "head_top_y": 2.081,
+   "doll_min_y": 0.742,
+   "removed": {
+    "tub": 1472,
+    "skirt": 0,
+    "rider": 55,
+    "island": 161,
+    "needle": 4,
+    "interior": 378,
+    "holes_filled": 11
+   },
+   "deck_probe_above_seat": [
+    0.086,
+    0.155,
+    0.235
+   ]
+  },
+  "pachycephalosaurus": {
+   "anchor": [
+    0.0115,
+    0.5836,
+    0.1494
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.0115,
+    0.5836,
+    0.1494
+   ],
+   "wheel_shift": [
+    0.0,
+    0.0,
+    0.12
+   ],
+   "unit_file": "seat_unit_opus/seat_pachycephalosaurus.glb",
+   "unit_faces_clipped": 223,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.614,
+     "R": 0.63
+    },
+    "fubuki": {
+     "L": 0.904,
+     "R": 0.913
+    },
+    "hayate": {
+     "L": 0.891,
+     "R": 0.902
+    },
+    "kai": {
+     "L": 1.0,
+     "R": 1.01
+    },
+    "kou": {
+     "L": 0.952,
+     "R": 0.968
+    },
+    "mino": {
+     "L": 0.882,
+     "R": 0.892
+    },
+    "rei": {
+     "L": 1.022,
+     "R": 1.029
+    },
+    "roku": {
+     "L": 0.903,
+     "R": 0.91
+    },
+    "saji": {
+     "L": 1.293,
+     "R": 1.305
+    },
+    "shigure": {
+     "L": 1.126,
+     "R": 1.135
+    },
+    "tadakuni": {
+     "L": 1.068,
+     "R": 1.079
+    },
+    "toto": {
+     "L": 1.039,
+     "R": 1.045
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 6.05,
+    "fubuki": 4.34,
+    "hayate": 7.79,
+    "kai": 5.68,
+    "kou": 3.17,
+    "mino": 6.21,
+    "rei": 2.26,
+    "roku": 5.16,
+    "saji": 3.38,
+    "shigure": 5.78,
+    "tadakuni": 4.83,
+    "toto": 4.73
+   },
+   "grip_L": [
+    -0.1574,
+    0.9633,
+    -0.2178
+   ],
+   "grip_R": [
+    0.1605,
+    0.9653,
+    -0.2181
+   ],
+   "fists_mean": [
+    0.0004,
+    0.9495,
+    -0.3592
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.385,
+     "R": 0.41
+    },
+    "fubuki": {
+     "L": 0.628,
+     "R": 0.641
+    },
+    "hayate": {
+     "L": 0.581,
+     "R": 0.597
+    },
+    "kai": {
+     "L": 0.685,
+     "R": 0.698
+    },
+    "kou": {
+     "L": 0.667,
+     "R": 0.688
+    },
+    "mino": {
+     "L": 0.584,
+     "R": 0.598
+    },
+    "rei": {
+     "L": 0.704,
+     "R": 0.714
+    },
+    "roku": {
+     "L": 0.603,
+     "R": 0.613
+    },
+    "saji": {
+     "L": 0.933,
+     "R": 0.949
+    },
+    "shigure": {
+     "L": 0.806,
+     "R": 0.817
+    },
+    "tadakuni": {
+     "L": 0.72,
+     "R": 0.736
+    },
+    "toto": {
+     "L": 0.732,
+     "R": 0.74
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.2033,
+     0.1603,
+     0.1988
+    ],
+    "seat_tub": [
+     0.0576,
+     0.0475,
+     0.0566
+    ],
+    "seat_trim": [
+     0.1156,
+     0.093,
+     0.1133
+    ]
+   },
+   "deck_height_above_seat": [
+    0.023,
+    0.189,
+    0.301
+   ],
+   "head_top_y": 1.806,
+   "doll_min_y": 0.467,
+   "removed": {
+    "tub": 1922,
+    "skirt": 0,
+    "rider": 50,
+    "island": 251,
+    "needle": 56,
+    "interior": 124,
+    "holes_filled": 11
+   },
+   "deck_probe_above_seat": [
+    0.21,
+    0.285,
+    0.343
+   ]
+  },
+  "euoplocephalus": {
+   "anchor": [
+    0.001,
+    1.0076,
+    0.0054
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.001,
+    1.0076,
+    0.0054
+   ],
+   "wheel_shift": [
+    0.0,
+    -0.02,
+    0.22
+   ],
+   "unit_file": "seat_unit_opus/seat_euoplocephalus.glb",
+   "unit_faces_clipped": 24,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 0.8,
+     "R": 0.843
+    },
+    "fubuki": {
+     "L": 1.107,
+     "R": 1.138
+    },
+    "hayate": {
+     "L": 1.125,
+     "R": 1.159
+    },
+    "kai": {
+     "L": 1.24,
+     "R": 1.272
+    },
+    "kou": {
+     "L": 1.182,
+     "R": 1.225
+    },
+    "mino": {
+     "L": 1.106,
+     "R": 1.138
+    },
+    "rei": {
+     "L": 1.26,
+     "R": 1.286
+    },
+    "roku": {
+     "L": 1.138,
+     "R": 1.163
+    },
+    "saji": {
+     "L": 1.564,
+     "R": 1.601
+    },
+    "shigure": {
+     "L": 1.379,
+     "R": 1.406
+    },
+    "tadakuni": {
+     "L": 1.339,
+     "R": 1.375
+    },
+    "toto": {
+     "L": 1.267,
+     "R": 1.291
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 2.07,
+    "fubuki": 2.91,
+    "hayate": 2.15,
+    "kai": 2.49,
+    "kou": 1.66,
+    "mino": 2.92,
+    "rei": 0.33,
+    "roku": 1.31,
+    "saji": 1.74,
+    "shigure": 1.06,
+    "tadakuni": 1.23,
+    "toto": 4.07
+   },
+   "grip_L": [
+    -0.1662,
+    1.441,
+    -0.3559
+   ],
+   "grip_R": [
+    0.1154,
+    1.4457,
+    -0.3576
+   ],
+   "fists_mean": [
+    -0.0101,
+    1.3735,
+    -0.5032
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.351,
+     "R": 0.435
+    },
+    "fubuki": {
+     "L": 0.583,
+     "R": 0.635
+    },
+    "hayate": {
+     "L": 0.534,
+     "R": 0.598
+    },
+    "kai": {
+     "L": 0.647,
+     "R": 0.701
+    },
+    "kou": {
+     "L": 0.647,
+     "R": 0.718
+    },
+    "mino": {
+     "L": 0.537,
+     "R": 0.594
+    },
+    "rei": {
+     "L": 0.66,
+     "R": 0.704
+    },
+    "roku": {
+     "L": 0.579,
+     "R": 0.621
+    },
+    "saji": {
+     "L": 0.888,
+     "R": 0.948
+    },
+    "shigure": {
+     "L": 0.785,
+     "R": 0.828
+    },
+    "tadakuni": {
+     "L": 0.688,
+     "R": 0.75
+    },
+    "toto": {
+     "L": 0.69,
+     "R": 0.729
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.1874,
+     0.104,
+     0.0548
+    ],
+    "seat_tub": [
+     0.0539,
+     0.0338,
+     0.0209
+    ],
+    "seat_trim": [
+     0.1073,
+     0.063,
+     0.0358
+    ]
+   },
+   "deck_height_above_seat": [
+    0.085,
+    0.275,
+    0.43
+   ],
+   "head_top_y": 2.23,
+   "doll_min_y": 0.891,
+   "removed": {
+    "tub": 1177,
+    "skirt": 0,
+    "rider": 67,
+    "island": 92,
+    "needle": 12,
+    "interior": 18,
+    "holes_filled": 6
+   },
+   "deck_probe_above_seat": [
+    0.23,
+    0.329,
+    0.365
+   ]
+  },
+  "eoraptor": {
+   "anchor": [
+    0.0,
+    0.8236,
+    0.7514
+   ],
+   "yaw": 0,
+   "scale": 1,
+   "anchor_from_mannequin": [
+    0.0,
+    0.8236,
+    0.7514
+   ],
+   "wheel_shift": [
+    0.0,
+    0.21,
+    0.45
+   ],
+   "unit_file": "seat_unit_opus/seat_eoraptor.glb",
+   "unit_faces_clipped": 2083,
+   "arm_reach_ratio_before_wheel_shift": {
+    "bakuou": {
+     "L": 1.526,
+     "R": 1.481
+    },
+    "fubuki": {
+     "L": 1.922,
+     "R": 1.865
+    },
+    "hayate": {
+     "L": 2.032,
+     "R": 1.967
+    },
+    "kai": {
+     "L": 2.135,
+     "R": 2.066
+    },
+    "kou": {
+     "L": 1.985,
+     "R": 1.926
+    },
+    "mino": {
+     "L": 1.981,
+     "R": 1.918
+    },
+    "rei": {
+     "L": 2.167,
+     "R": 2.096
+    },
+    "roku": {
+     "L": 1.957,
+     "R": 1.888
+    },
+    "saji": {
+     "L": 2.589,
+     "R": 2.512
+    },
+    "shigure": {
+     "L": 2.243,
+     "R": 2.168
+    },
+    "tadakuni": {
+     "L": 2.306,
+     "R": 2.229
+    },
+    "toto": {
+     "L": 2.141,
+     "R": 2.072
+    }
+   },
+   "wheel_touches_legs_pct": {
+    "bakuou": 3.22,
+    "fubuki": 1.82,
+    "hayate": 1.47,
+    "kai": 1.35,
+    "kou": 0.75,
+    "mino": 1.79,
+    "rei": 0.83,
+    "roku": 1.57,
+    "saji": 1.88,
+    "shigure": 1.39,
+    "tadakuni": 2.3,
+    "toto": 2.64
+   },
+   "grip_L": [
+    -0.1799,
+    1.283,
+    0.3167
+   ],
+   "grip_R": [
+    0.1312,
+    1.2528,
+    0.3563
+   ],
+   "fists_mean": [
+    -0.0111,
+    1.1895,
+    0.2428
+   ],
+   "arm_reach_ratio": {
+    "bakuou": {
+     "L": 0.48,
+     "R": 0.46
+    },
+    "fubuki": {
+     "L": 0.746,
+     "R": 0.691
+    },
+    "hayate": {
+     "L": 0.72,
+     "R": 0.657
+    },
+    "kai": {
+     "L": 0.837,
+     "R": 0.765
+    },
+    "kou": {
+     "L": 0.816,
+     "R": 0.765
+    },
+    "mino": {
+     "L": 0.716,
+     "R": 0.654
+    },
+    "rei": {
+     "L": 0.854,
+     "R": 0.774
+    },
+    "roku": {
+     "L": 0.765,
+     "R": 0.683
+    },
+    "saji": {
+     "L": 1.102,
+     "R": 1.024
+    },
+    "shigure": {
+     "L": 0.982,
+     "R": 0.896
+    },
+    "tadakuni": {
+     "L": 0.901,
+     "R": 0.818
+    },
+    "toto": {
+     "L": 0.876,
+     "R": 0.798
+    }
+   },
+   "colors_linear": {
+    "seat_cushion": [
+     0.0972,
+     0.0824,
+     0.0665
+    ],
+    "seat_tub": [
+     0.0321,
+     0.0283,
+     0.0241
+    ],
+    "seat_trim": [
+     0.0592,
+     0.0512,
+     0.0424
+    ]
+   },
+   "deck_height_above_seat": [
+    -0.026,
+    0.227,
+    0.383
+   ],
+   "head_top_y": 2.047,
+   "doll_min_y": 0.707,
+   "removed": {
+    "tub": 481,
+    "skirt": 0,
+    "rider": 17,
+    "island": 41,
+    "needle": 60,
+    "interior": 7,
+    "holes_filled": 18
+   },
+   "deck_probe_above_seat": [
+    0.126,
+    0.237,
+    0.365
+   ]
+  }
+ }
+}

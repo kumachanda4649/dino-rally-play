@@ -1,0 +1,101 @@
+{
+  "_doc": "Where the mannequin's HEAD centre sat in each original Tripo kart (standard-scaled kart frame, glTF axes: x right, z back; the kart faces -Z). The rider's head centre is put there (front-back), the head top stays at dolls.json head_top_z (up-down). Measured 2026-10-19 with sandbox/doll-compare.html (?sp=..): grey (mannequin) triangle centroids in the top 0.35 m slice; z = mean of (mean z, middle of the z range, mean z of the top 0.12 m crown) - the same recipe cartParts.js headCentre() applies to the rider. The mannequin torso is mostly NOT grey in the texture (it was only partly carved), so the head is the one reliable anchor; hip ~ head - 0.07 m for both the mannequin and the riders. 'manual' = [dx, dy, dz] hand correction added after the head alignment (x right, y up, z back). eoraptor's mannequin texture is dark grey (not light grey like the others), so it was measured with the grey threshold lowered (?lo=0.15).",
+  "species": {
+    "allosaurus": {
+      "head_z": 0.153,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "archaeornithomimus": {
+      "head_z": 0.328,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ceratosaurus": {
+      "head_z": 0.15,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "coelacanth": {
+      "head_z": 0.292,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "eoraptor": {
+      "head_z": 0.605,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "euoplocephalus": {
+      "head_z": -0.141,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "giganotosaurus": {
+      "head_z": 0.16,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "pachycephalosaurus": {
+      "head_z": 0.003,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "spinosaurus": {
+      "head_z": 0.075,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "therizinosaurus": {
+      "head_z": 0.198,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "tyrannosaurus": {
+      "head_z": 0.065,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    },
+    "velociraptor": {
+      "head_z": -0.009,
+      "manual": [
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

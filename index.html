@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Dino Rally</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='22' cy='10' r='5' fill='%23f2b632'/%3E%3Cpath d='M18 14 4 28' stroke='%2358f0e0' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <!-- Boot splash: shown until the game reports ready (data-kart-ready), so a slow first load is never a blank white page. -->
+    <style>html{background:#0b1020}#boot{z-index:99999;color:#f2e6c8;background:radial-gradient(at 50% 60%,#2a1f4a 0%,#0b1020 70%);flex-direction:column;justify-content:center;align-items:center;gap:16px;font-family:system-ui,-apple-system,Segoe UI,sans-serif;transition:opacity .4s;display:flex;position:fixed;inset:0}#boot b{letter-spacing:.12em;color:#f2b632;font-size:clamp(28px,5vw,56px)}#boot i{border:4px solid #58f0e033;border-top-color:#58f0e0;border-radius:50%;width:42px;height:42px;animation:1s linear infinite bootspin}#boot small{text-align:center;white-space:pre-wrap;opacity:.85;max-width:80vw}@keyframes bootspin{to{transform:rotate(360deg)}}</style>
+    <script type="module" crossorigin src="/dino-rally-play/assets/main-DZMtZn37.js"></script>
+    <link rel="modulepreload" crossorigin href="/dino-rally-play/assets/math-ENgJgb_U.js">
+    <link rel="stylesheet" crossorigin href="/dino-rally-play/assets/main-CE7ez1qX.css">
+  </head>
+  <body>
+    <div id="boot"><b>DINO RALLY</b><i></i><small id="boot-msg">Loading...</small></div>
+    <canvas id="game" tabindex="0"></canvas>
+    <div id="ui"></div>
+    <noscript>Dino Rally needs JavaScript and WebGL2.</noscript>
+    <script>
+      (function () {
+        var boot = document.getElementById('boot');
+        var msg = document.getElementById('boot-msg');
+        function done() {
+          if (!boot) return;
+          var el = boot; boot = null;
+          el.style.opacity = '0';
+          setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 450);
+        }
+        function show(text) { if (boot && msg) msg.textContent = text; }
+        if (document.documentElement.dataset.kartReady === '1') done();
+        var mo = new MutationObserver(function () {
+          if (document.documentElement.dataset.kartReady === '1') { mo.disconnect(); done(); }
+        });
+        mo.observe(document.documentElement, { attributes: true, attributeFilter: ['data-kart-ready'] });
+        window.addEventListener('error', function (e) { show('Could not start: ' + (e.message || 'script error') + '\nPress F12 for details, then reload (Ctrl+F5).'); });
+        window.addEventListener('unhandledrejection', function (e) { show('Could not start: ' + String((e.reason && e.reason.message) || e.reason || 'error') + '\nPress F12 for details, then reload (Ctrl+F5).'); });
+        setTimeout(function () { show('Still loading... If this stays, reload (Ctrl+F5) and check that hardware acceleration / WebGL2 is enabled (chrome://gpu).'); }, 60000);
+      })();
+    </script>
+  </body>
+</html>
